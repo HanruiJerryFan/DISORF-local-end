@@ -10,8 +10,10 @@ Clone the repository:
 ```
 git clone https://github.com/Edward11235/local_end
 ```
-Set the IP address of the server
-
+Set the IP address of the server at src/Tracking.cc at line 97
+```
+PacketSerializer channel("YOUR IP ADDRESS", YOUR PORT NUMBER);
+```
 We provide a script `build.sh` to download and build all dependencies. Note that some of the dependencies of ORB-SLAM2 are obsolete. So we update code for packages like Pangolin.
 ```
 cd ORB_SLAM2
